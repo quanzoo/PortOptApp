@@ -1,0 +1,19 @@
+<!-- test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSV Loader Test</title>
+</head>
+<body>
+  <h1>CSV読み込みテスト</h1>
+  <script src="js/loader.js"></script>
+  <script>
+    loadReturnsData().then(({ headers, data }) => {
+      console.log("✅ ヘッダー:", headers);
+      console.log("✅ データ件数:", data);
+      console.log("✅ 最新:", data[data.length - 1]);
+    });
+  </script>
+</body>
+</html>
